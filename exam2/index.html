@@ -4,13 +4,156 @@
     <link rel="icon" href="static/img/head1.png"/>
     <link rel="stylesheet" href="static/site.css"/>
 
-    <style></style>
+    <style>
+        #header1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        }
+        #main
+        {
+            width:800px;
+
+        }
+        #left {
+            width: 280px;
+
+        }
+        #content {
+            display: flex;
+            flex-direction: row;
+        }
+        #updiv{
+            width:510px;
+            height:110px;
+        }
+        #footer{
+            height:60px;
+        }
+
+        .border
+        {
+            border-style:solid;
+            border-width:1px;
+            border-color:lightgrey;
+            border-radius:5px;
+        }
+        #header2 {
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        }
+        #lowdivcontent {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #footer {
+            height:60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+        }
+        #header11 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #header21 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #sqlimage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
 </head>
 
 <body>
-    [Exam Code]
+    <div id="main">
 
-    <img src="static/img/a.svg"style="height:50px;"/>
+        <div id="header1">
+            <div class="border" id="header11" style="width:200px; height:70px;">
+                <div id="42">MIS 3033 Exam 2</div>
+                <div id="43">Sanam Kumar</div>
+            </div>
+            <div class="border" id="header21" style="width:200px; height:70px;">GNBA</div>
+        </div>
+        <div class="border" id="header2" style="height:80px;">
+                <div><img src="static/img/head1.png" style="height:60px; border-radius:50%" /></div>
+                <div>
+                    <div>Sanam Kumar</div>
+                    <div>MIS Student</div>
+                </div>
+                <div style="margin-left:30px;">
+                    <a href="https://www.linkedin.com/">
+                        <img src="static/img/linkedin.png" style="width:30px;" />
+                    </a>
+                </div>
+        </div>
+
+        <div id="content">
+            <div class="border" id="left" style="align-items:center">
+                <span style="text-transform:uppercase; background-color:lightskyblue; border-radius:5px;">RECENT NEWS:</span>
+
+                <ul>
+                    <li>Learned C#</li>
+                    <li>Learned Entity Framework</li>
+                    <li>Learned <div id="sqlimage"><img src="static/img/sqlite.svg" style="height:40px;" /></div></li>
+                </ul>
+            </div>
+            <div id="right">
+                <div class="border" id="updiv">
+                    <span style="text-transform:uppercase; background-color:lightskyblue; border-radius:5px;">ABOUT ME:</span>
+                    <br />
+
+                    I am a MIS student. I like programming and I am good at C#. I learned entity framework to database manipulations. I know html, css, and I started to learn javascript. It is fun. Later I will learn C# .NET MVC dynamic web app development and web api development.
+                </div>
+                <div class="border" id="lowdiv" style="height:160px; width:510px;">
+                    <span style="text-transform:uppercase; background-color:lightskyblue; border-radius:5px;">ACHIEVMENTS</span>
+                    <br />
+                    <div id="lowdivcontent">
+                        <div class="border">
+                            <div><img src="static/img/html.svg" style="height:100px;" /></div>
+                            <div>HTML</div>
+                        </div>
+                        <div class="border">
+                            <div><img src="static/img/css.svg" style="height:100px;" /></div>
+                            <div>CSS</div>
+                        </div>
+                        <div class="border">
+                            <div><img src="static/img/javascript.svg" style="height:100px;" /></div>
+                            <div>JavaScript</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border" id="footer">
+            <span style="font-weight:bold;font-size:20px;color:grey;">Developed by Sanam Kumar for MIS 3033 Exam 2</span>
+
+            <img src="static/img/logo.svg" style="height:50px;" />
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--<img src="static/img/a.svg"style="height:50px;"/>
     <img src="static/img/b.svg"style="height:50px;"/>
     <img src="static/img/css.svg"style="height:50px;"/>
     <img src="static/img/head1.png"style="height:50px;"/>
@@ -19,6 +162,6 @@
     <img src="static/img/javascript.svg"style="height:50px;"/>
     <img src="static/img/linkedin.png"style="height:50px;"/>
     <img src="static/img/logo.svg"style="height:50px;"/>
-    <img src="static/img/sqlite.svg"style="height:50px;"/>
+    <img src="static/img/sqlite.svg"style="height:50px;"/>-->
 </body>
 </html>
