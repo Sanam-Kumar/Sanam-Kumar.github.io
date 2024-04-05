@@ -57,13 +57,13 @@
                 }
                 let url = null;
                 if (name == 's') {
-                    url = https://juxinglong.github.io/static/HW/hw6/Students.json;
+                    url = `https://juxinglong.github.io/static/HW/hw6/Students.json`;
                 }
                 else if (name == 'c') {
-                    url = https://juxinglong.github.io/static/HW/hw6/Courses.json;
+                    url = `https://juxinglong.github.io/static/HW/hw6/Courses.json`;
                 }
                 else {
-                    url = https://juxinglong.github.io/static/HW/hw6/Enrollments.json;
+                    url = `https://juxinglong.github.io/static/HW/hw6/Enrollments.json`;
                 }
                 let r = await fetch(url);
                 let rj = await r.json();
@@ -72,10 +72,15 @@
                 let tableDiv = document.querySelector("#table");
 
                 let params = {
-                    data:rj
+                    data: rj,
+                    pagination: { limit: 5, },
+                    search: true,
+                    sort: true,
+                    width: 1200,
+
                 };
 
-                let grid = new gridjs.Grid(params);
+                grid = new gridjs.Grid(params);
                 grid.render(tableDiv);
             }
 
